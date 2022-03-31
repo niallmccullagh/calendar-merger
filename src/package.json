@@ -1,0 +1,19 @@
+{
+  "name": "calendar-merge-lambda",
+  "version": "1.0.0",
+  "description": "A simple lambda function to merge multiple iCal calendars",
+  "main": "handler.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1104.0",
+    "ical.js": "^1.5.0",
+    "node-fetch": "^2.6.7"
+  }
+}

@@ -1,8 +1,35 @@
-# Welcome to your CDK JavaScript project
+# Calendar Merge
 
-This is a blank project for JavaScript development with CDK.
+Just a little play with CDK and lambdas. Don't take any of the code in here too seriously!
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app. The build step is not required when using JavaScript.
+* Merges multiple calendars into one.
+* List of calendars stored in a dynamodb table.
+* The name of the calendar is prefixed onto any events in that calendar.
+
+
+
+```
+{
+  "app_name": {
+    "S": "CalendarMerger"
+  },
+  "calendars": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "My 1st Calendar"
+          },
+          "url": {
+            "S": "https://mycalendar.com/mycalendar"
+          }
+        }
+      },
+      ...
+    ]
+  }
+}
+```
 
 ## Useful commands
 
